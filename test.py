@@ -1,4 +1,5 @@
 def leet_translate1():
+    # use a dictionary to decode the leet code
     text = input('Enter the code: ')
     leet_decode = {'@': 'a', '4': 'a', '8': 'b', '3': 'e', '1': 'l', '0': 'o', '$': 's', '5': 's', '7': 't', '+': 't'}
     
@@ -9,6 +10,7 @@ def leet_translate1():
     print(text)
 
 def leet_translate():
+    # use case statements to decode the leet code instead of using a dictionary
     text = input('Enter the code: ')
     leet_decode = ''
     
@@ -33,6 +35,7 @@ def leet_translate():
     print(leet_decode)
   
 def magic_numb1():
+    # using an array to store the numbers and then using the built in max function to find the highest number
     magic_array = []
     for i in range(3):
         try:
@@ -44,6 +47,7 @@ def magic_numb1():
     print('The answer is ' + str(max(magic_array)))
       
 def magic_numb():
+    # using a variable to store the highest number instead of an array
     magic_numb = 0
     for i in range(3):
         try:
