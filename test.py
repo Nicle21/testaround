@@ -1,3 +1,13 @@
+def leet_translate1():
+    text = input('Enter the code: ')
+    leet_decode = {'@': 'a', '4': 'a', '8': 'b', '3': 'e', '1': 'l', '0': 'o', '$': 's', '5': 's', '7': 't', '+': 't'}
+    
+    for i in text:
+        if i in leet_decode:
+            text = text.replace(i, leet_decode[i])
+            
+    print(text)
+
 def leet_translate():
     text = input('Enter the code: ')
     leet_decode = ''
